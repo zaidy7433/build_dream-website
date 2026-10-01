@@ -1,0 +1,98 @@
+*{box-sizing:border-box
+}
+body{margin:0;font-family:Arial;text-align:center
+}
+nav{padding:18px;background:#123;color:white
+}
+nav a{color:white;
+    margin:15px;
+    text-decoration:none
+}
+.hero{
+    background:#eee
+    }
+.btn{padding:12px 25px;border:0;
+    border-radius:20px;
+    background:#123;color:white
+}
+section{padding:40px
+}
+.cards{display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap
+}
+.card{width:200px;padding:10px;
+    box-shadow:0 2px 10px #aaa
+}
+.card img{width:100%;
+    height:140px;
+    object-fit:cover
+}
+footer{padding:20px;
+    background:#123;
+    color:white
+
+}
+.hero img{
+    width:100%;
+        height:100vh;
+    display:block;
+}
+nav a:hover{color:black;
+     font-size:18px;
+}
+.btn:hover{background:black;
+}
+/* Hero animation */
+.hero h1{
+  animation: fade 1s ease;
+}
+.hero p{
+  animation: fade 1.5s ease;
+}
+.hero img{
+  animation: up 1s ease;
+}
+
+/* Button animation */
+.btn{
+  transition:.3s;
+  animation: up 1s ease;
+}
+.btn:hover{
+  transform:scale(1.1);
+  box-shadow:0 8px 20px #555;
+}
+
+/* Cards animation */
+.card{
+  transition:.4s;
+  animation: up 1s ease;
+}
+.card:hover{
+  transform:translateY(-12px) scale(1.03);
+  box-shadow:0 10px 25px #999;
+}
+
+/* Images */
+.card img{
+  transition:.4s;
+}
+.card:hover img{
+  transform:scale(1.08);
+}
+
+/* Navbar links */
+nav a{
+  transition:.3s;
+}
+   /* Animations */
+@keyframes fade{
+  from{opacity:0}
+  to{opacity:1}
+}
+@keyframes up{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:translateY(0)}
+}
